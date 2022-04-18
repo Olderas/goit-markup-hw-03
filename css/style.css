@@ -44,6 +44,12 @@ ul {
     margin-right: auto;
 }
 
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 /* header */
 
 .logo-accent,
@@ -120,14 +126,17 @@ background-color: var(--hero-bgrcolor);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
-    text-align: center;
     letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .button {
     background-color: var(--accent-color);
     color: var(--primari-white-color);
+    display: inline-block;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -146,6 +155,8 @@ background-color: var(--hover-button)
 /* section index*/
 .section-title {
     color: var(--title-text-color);
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -158,6 +169,8 @@ h2 {
 
 .section .title {
     color: var(--title-text-color);
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
@@ -178,13 +191,17 @@ h2 {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-.team-text {
-    font-size: 16px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
+.text {
+font-size: 16px;
+line-height: 1.2;
+background-color: aqua;
+letter-spacing: 0.03em;
+margin-top: 0;
+margin-bottom: 0;
 }
 
 
@@ -210,6 +227,7 @@ h2 {
 /* Фильтр */
 
 /* Нужно ли мне применять єтот код?? */
+
 /* .button {
     color: var(--primari-white-color);
     background-color: var(--accent-color);
@@ -220,10 +238,15 @@ h2 {
     cursor: pointer;
     text-align: center;
 }
+
 .button:hover,
 .button:focus {
     background-color: var(--hover-button);
 } */
+
+
+
+
 
 .buttons {
     background-color: var(--button-filter);
