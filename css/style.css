@@ -39,10 +39,10 @@ ul {
 /* утилиты */
 
 .container {
-    width: 1200px;
-    outline: 2px solid tomato;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 1230px;
+    outline: 2px solid;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -193,7 +193,7 @@ text-align: center;
 background-color: var(--hover-button)
 }
 
-/* section index*/
+/* section */
 .section-title {
     color: var(--title-text-color);
     margin-top: 0;
@@ -206,7 +206,21 @@ h2 {
     text-align: center;
 }
 
-/* Преимущество компании index */
+/* Преимущество компании  */
+
+.feature-list {
+    display: flex;
+    flex-wrap: nowrap;
+        padding-bottom: 186px;
+        padding-top: 94px;
+
+}
+
+.feature-list .flex-feature + .flex-feature {
+    margin-left: 30px;
+}
+
+
 
 .section .title {
     color: var(--title-text-color);
@@ -218,9 +232,42 @@ h2 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+/* Section work */
+
+.work-list {
+display: flex;
+flex-wrap: nowrap;
+padding-bottom: 92px;
+margin-top: 52px;
+}
+
+.flex-item {
+    width: 370px;
+}
+
+.section-work .flex-item + .flex-item{
+    margin-left: 30px;
+}
 
 
-    /* Section work index */
+    /* Section team */
+
+.team-list {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 50px;
+    padding-bottom: 92px;
+}
+
+.flex-team {
+    width: 270px;
+}
+
+.section-team .flex-team + .flex-team {
+    margin-left: 30px;
+}
+
+
 .section-team{
     background-color: var(--button-filter);
 }
@@ -239,7 +286,7 @@ h2 {
 .text {
 font-size: 16px;
 line-height: 1.2;
-background-color: aqua;
+
 letter-spacing: 0.03em;
 margin-top: 0;
 margin-bottom: 0;
@@ -249,6 +296,19 @@ margin-bottom: 0;
 
 
 /* PORTFOLIO */
+
+
+.features {
+display: flex;
+flex-wrap: wrap;
+    margin: 30px;
+}
+
+.flex-element {
+    width: 370px;
+}
+
+
 
 .features .features-title {
     color: var(--title-text-color);
