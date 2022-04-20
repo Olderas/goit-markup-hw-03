@@ -36,10 +36,13 @@ ul {
 }
 
 
+/* утилиты */
 
 .container {
     width: 1200px;
     outline: 2px solid tomato;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -48,6 +51,13 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+/* Main-nav */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /* header */
@@ -76,8 +86,27 @@ ul {
 
 /* site nav  */
 
+.site-nav {
+        margin-bottom: 0;
+        margin-top: 0;
+    display: flex;
+}
+
+/* .site-nav .item {
+    background-color: tomato;
+    
+} */
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+
+}
+
 .site-nav .link {
     color: var(--title-text-color);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
@@ -90,6 +119,7 @@ ul {
 }
 
 
+
 #studio {
     color: var(--accent-color);
 }
@@ -100,6 +130,16 @@ ul {
 
 
 /* Contact */
+
+.contact {
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.contact .item + .item {
+    margin-left: 50px;
+}
 
 .contact .contact-link {
     color: var(--primari-text-color);
@@ -119,6 +159,8 @@ a {
 
 .hero {
 background-color: var(--hero-bgrcolor);
+text-align: center;
+
 }
 
 .hero .hero-title {
@@ -140,7 +182,6 @@ background-color: var(--hero-bgrcolor);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
