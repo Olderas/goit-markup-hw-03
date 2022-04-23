@@ -6,6 +6,7 @@
 /* цвет героя и футера     --hero-bgrcolor: #2F303A; */
 /* фон кнопки в фильтре --button-filter: #F5F4FA; */
 /* Кнопка героя ховер  --hover-button: #188ce8; */
+/* border-box --border-box: #EEEEEE; */
 
 
 :root {
@@ -17,6 +18,7 @@
 --hero-bgrcolor: #2F303A;
 --button-filter: #F5F4FA;
 --hover-button: #188ce8;
+--border-box: #EEEEEE;
 }
 
 
@@ -40,7 +42,7 @@ ul {
 
 .container {
     width: 1230px;
-    outline: 2px solid;
+    /* outline: 2px solid; */
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -224,6 +226,10 @@ h2 {
     text-align: center;
 }
 
+img {
+ margin: 0;
+}
+
 /* Преимущество компании  */
 
 .feature-list {
@@ -335,6 +341,14 @@ margin-right: 30px;
 /* background-color: tomato; */
 }
 
+.box {
+padding: 20px 24px;
+border-right: 1px solid var(--border-box);
+border-bottom: 1px solid var(--border-box);
+border-left: 1px solid var(--border-box);
+width: 370px;
+}
+
 .flex-element:nth-child(3n){
     margin-right: 0;
 }
@@ -342,22 +356,20 @@ margin-right: 30px;
 
 
 .features-title {
-    margin-left: auto;
+    margin: 0;
+    margin-bottom: 4px;
+    margin-right: auto;
 }
 
 
-.features-text {
-    padding-right: 24px;
-    padding-left: 24px;
-    padding-bottom: 20px;
-}
+
 
 .features .features-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     margin-left:auto;
-    padding-bottom: 4px;
+    text-align: left;
     line-height: 2;
     letter-spacing: 0.06em;
 }
