@@ -49,11 +49,7 @@ ul {
     margin-right: auto;
 }
 
-.list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+
 
 /* Main-nav */
 .main-nav {
@@ -69,12 +65,10 @@ ul {
 .container.header {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        border-bottom: 1px solid var(--border-box);
 }
 
-.header {
-    border-bottom: 1px solid var(--border-box);
-}
+
 
 .logo-accent,
 .logo-black,
@@ -187,6 +181,9 @@ letter-spacing: 0.02em;
 a {
     text-decoration: none
 }
+h1, h2, h3, p {
+margin: 0;
+}
 
 
 /* Герой index */
@@ -198,7 +195,7 @@ padding-top: 200px;
 padding-bottom: 200px;
 }
 
-.hero .hero-title {
+.hero-title {
     color: var(--primari-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -206,8 +203,11 @@ padding-bottom: 200px;
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 0;
-    margin: 0px 237px 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  
 }
 
 /* Кнопки */
@@ -279,38 +279,55 @@ img {
 /* Преимущество компании  */
 
 
-.section.feature {
-        padding-bottom: 94px;
-        padding-top: 94px;
-}
 
 .feature-list {
-    display: flex;
-
-
-
+display: flex;
+margin: 0;
+padding: 0;
+list-style: none;
 }
 
-.feature-list .flex-feature + .flex-feature {
+.feature-list .feature-item + .feature-item {
     margin-left: 30px;
 }
 
 
 
-.section .title {
-    color: var(--title-text-color);
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+.feature-title {
+color: var(--title-text-color);
+margin-top: 0;
+margin-bottom: 10px;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+text-transform: uppercase;
 }
 
-.section-title.hidden {
-display: none;
+.feature-text {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--primari-text-color);
 }
+
+.visually-hidden {
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
+}
+
+
 /* Section work */
 
 
@@ -381,11 +398,11 @@ display: flex;
 }
 
 .text {
-font-size: 16px;
-line-height: 1.18;
+font-size: 14px;
+line-height: 1.71;
 letter-spacing: 0.03em;
 margin-top: 0;
-margin-bottom: 0;
+margin-bottom: 16px;
 
 }
 
@@ -395,7 +412,7 @@ margin-bottom: 0;
 /* PORTFOLIO */
 
 
-.features {
+.gallery {
 display: flex;
 flex-wrap: wrap;
 padding: 0;
@@ -403,13 +420,20 @@ margin: 0;
     /* background-color: teal; */
 }
 
-.flex-element {
+.gallery-item {
 margin-right: 30px;
-margin-bottom: 30px;
 
 }
 
-.box {
+.gallery-item:nth-child(-n + 6){
+    margin-bottom: 30px;
+}
+
+.gallery-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.gallery-box {
 padding: 20px 24px;
 border-right: 1px solid var(--border-box);
 border-bottom: 1px solid var(--border-box);
@@ -417,13 +441,11 @@ border-left: 1px solid var(--border-box);
 width: 370px;
 }
 
-.flex-element:nth-child(3n){
-    margin-right: 0;
-}
 
 
 
-.features-title {
+
+.gallery-title {
     margin: 0;
     margin-bottom: 4px;
     margin-right: auto;
@@ -432,7 +454,7 @@ width: 370px;
 
 
 
-.features .features-title {
+.gallery .gallery-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -442,13 +464,15 @@ width: 370px;
     letter-spacing: 0.06em;
 }
 
-.features .features-text {
+.gallery .gallery-text {
     color: var(--primari-text-color);
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
     margin: 0;
 }
+
+
 
 /* Фильтр */
 
@@ -480,10 +504,11 @@ color: var(--title-text-color);
 font-weight: 500;
 padding-left: 22px;
 padding-right: 22px;
+padding-top: 6px;
+padding-bottom: 6px;
 font-size: 16px;
 line-height: 1.6;
-width: 134px;
-height: 29.59px;
+
 cursor: pointer;
 text-align: center;
 border: none;
