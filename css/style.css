@@ -62,10 +62,15 @@ ul {
 
 /* header */
 
-.container.header {
+.header {
+border-bottom: 1px solid var(--border-box);
+}
+
+
+.container-header {
         display: flex;
         align-items: center;
-        border-bottom: 1px solid var(--border-box);
+        
 }
 
 
@@ -345,6 +350,8 @@ margin: -1px;
 
 .work-list {
 display: flex;
+padding: 0;
+margin: 0;
 }
 
 .flex-item {
@@ -368,6 +375,8 @@ display: flex;
 .team-list {
     display: flex;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .flex-team {
@@ -402,7 +411,7 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 margin-top: 0;
-margin-bottom: 16px;
+
 
 }
 
